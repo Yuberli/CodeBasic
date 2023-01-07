@@ -31,3 +31,7 @@ public class booleanBasico{
    }
 
 }
+
+
+
+// Esta es una informacion adicionada a la cabecera main para luego probar la union con la rama trabajo2
