@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class booleanBasico{
+   public static void main (String args[]){
+      Scanner entrada = new Scanner (System.in);
+      String mi="";
+
+      mi = MensajeInicial (mi, entrada);
+      
+      while (NoNumeroUno(mi)){
+         System.out.println("El dato ingresado no es valido!!");
+         mi = MensajeInicial (mi, entrada);
+      }
+
+      System.out.println("Gracias por ingresar el numero 1.");
+   }
+
+   public static boolean NoNumeroUno (String num){
+      if (num.equals("1")){
+         return false;
+      }else {
+         return true;
+      }
+   }
+
+   public static String MensajeInicial (String mi, Scanner entrada){
+      System.out.println("");
+      System.out.print("Presiona el numero 1 para continuar: ");
+      mi = entrada.nextLine();
+      System.out.println("");
+      return mi;
+   }
+
+}
